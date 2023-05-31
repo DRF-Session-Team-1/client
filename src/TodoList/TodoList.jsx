@@ -67,7 +67,7 @@ function TodoList() {
 
   return (
     <div className='main'>
-      <h1>Todo List</h1>
+      <h1>✅ 오늘 할 일 ✅</h1>
       <div className='container'>
         <div className='input-container'>
           <input
@@ -75,7 +75,7 @@ function TodoList() {
             value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
-          <button onClick={addTodo}>Add</button>
+          <button onClick={addTodo}>추가</button>
         </div>
 
         <ul>
@@ -91,8 +91,8 @@ function TodoList() {
                     />
                   </div>
                   <div className="button-container">
-                    <button onClick={handleSaveClick}>Submit</button>
-                    <button onClick={handleCancelClick}>Cancel</button>
+                    <button onClick={handleSaveClick}>완료</button>
+                    <button onClick={handleCancelClick}>취소</button>
                   </div>
                 </div>
               ) : (
@@ -101,8 +101,8 @@ function TodoList() {
                     {todo.text}
                   </div>
                   <div className="button-container">
-                    <button onClick={() => handleEditClick(todo.id, todo.text)}>Edit</button>
-                    <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+                    <button onClick={() => handleEditClick(todo.id, todo.text)}>수정</button>
+                    <button onClick={() => deleteTodo(todo.id)}>삭제</button>
                   </div>
                 </div>
               )}
