@@ -80,6 +80,22 @@ button:hover {
     background: #0056b3;
 }
 
+.edit-button {
+    background: #f4d35e; /* Yellow color */
+}
+
+.delete-button {
+    background: #ef5350; /* Red color */
+}
+
+.edit-button:hover {
+    background: #c0b283; /* Darker Yellow color */
+}
+
+.delete-button:hover {
+    background: #b61827; /* Darker Red color */
+}
+
 ul {
     list-style: none;
     padding: 0;

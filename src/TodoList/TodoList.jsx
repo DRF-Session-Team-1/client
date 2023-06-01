@@ -92,7 +92,7 @@ function TodoList() {
                   </div>
                   <div className="button-container">
                     <button onClick={handleSaveClick}>완료</button>
-                    <button onClick={handleCancelClick}>취소</button>
+                    <button className="delete-button" onClick={handleCancelClick}>취소</button>
                   </div>
                 </div>
               ) : (
@@ -101,8 +101,8 @@ function TodoList() {
                     {todo.text}
                   </div>
                   <div className="button-container">
-                    <button onClick={() => handleEditClick(todo.id, todo.text)}>수정</button>
-                    <button onClick={() => deleteTodo(todo.id)}>삭제</button>
+                    <button className="edit-button" onClick={() => handleEditClick(todo.id, todo.text)}>수정</button>
+                    <button className="delete-button" onClick={() => deleteTodo(todo.id)}>삭제</button>
                   </div>
                 </div>
               )}
